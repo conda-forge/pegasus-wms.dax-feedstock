@@ -1,5 +1,5 @@
 {% set name = "pegasus-wms.dax" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c0a7ee2dad273d60aae3a791dab952abdfe1de13cb187ecbf820ae36c400434
+  sha256: 972681141fb77c6a1fcab017c72b954943a9938e730ca47c1563b4bb27ba79d4
 
 build:
   noarch: python
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
   run:
-    - python
+    - python >=3.5
     - six
 
 test:
@@ -29,10 +29,11 @@ test:
   imports:
     - Pegasus.DAX3
   commands:
-    - pip check
+    - python -m pip check
 
 about:
   home: https://pegasus.isi.edu
+  dev_url: https://github.com/pegasus-isi/pegasus.git
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
