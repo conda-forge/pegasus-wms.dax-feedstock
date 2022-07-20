@@ -11,13 +11,17 @@ Summary: Pegasus Workflow Management System Python API
 
 Development: https://github.com/pegasus-isi/pegasus.git
 
+The `Pegasus.DAX3` API has been deprecated and will be removed in v5.1.0.
+Please use the new API released in v5.0.0.
+
+
 Current build status
 ====================
 
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11460&branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pegasus-wms.dax-feedstock?branchName=main">
       </a>
     </td>
