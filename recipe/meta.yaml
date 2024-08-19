@@ -18,7 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.5
-    - setuptools
+    - setuptools <69
+    - wheel
   run:
     - python >=3.5
     - six >=1.9.0
@@ -30,6 +31,7 @@ test:
     - Pegasus.DAX3
   commands:
     - python -m pip check
+    - python -m pip show pegasus-wms.dax
 
 about:
   home: https://pegasus.isi.edu
